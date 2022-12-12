@@ -88,3 +88,35 @@ for (let i = 1; i <= 12; i++) {
 }
 
 // console.log(totalTabungan);
+
+//Buatlah segitiga siku dengan *
+
+const segitiga = (nilai) => {
+  let hasil = "";
+
+  for (let i = 0; i <= nilai; i++) {
+    for (let j = 0; j <= i; j++) {
+      hasil += "*";
+    }
+    hasil += "\n";
+  }
+  return hasil;
+};
+
+// console.log(segitiga(10));
+
+//Buatlah segitiga siku dengan *
+
+const segitigaTerbalik = (nilai) => {
+  let hasil = "";
+
+  for (let i = 0; i <= nilai; i++) {
+    for (let j = nilai; j > i; j--) {
+      hasil += "*";
+    }
+    hasil += "\n";
+  }
+  return hasil;
+};
+
+// console.log(segitigaTerbalik(10));
